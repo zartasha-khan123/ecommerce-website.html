@@ -239,109 +239,48 @@ a:hover {
     line-height:1.5em; }
 
 
-
-    /* Responsive adjustments */
-@media (max-width: 1200px) {
-    .container {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    @media (max-width: 480px) {
+        h1, h2, h3, h4, h5 {
+            font-size: 16px; /* Adjust according to your needs */
+            padding: 5px;
+        }
     }
-    .position2 {
-        left: 70%;
+    
+    @media (max-width: 768px) {
+        h1, h2, h3, h4, h5 {
+            font-size: 18px;
+            padding: 10px;
+        }
     }
-}
-
-@media (max-width: 768px) {
-    .navbar2, .menu2, .footer2 {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .centered, .centered2 {
-        left: 50%;
-        top: 30%;
-        transform: translate(-50%, -30%);
-    }
-
-    .container {
-        width: 100%;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar1 {
-        height: 50px;
-        padding-top: 15px;
+    @media (max-width: 768px) {
+        .navbar2 {
+            flex-direction: column;
+            padding: 15px;
+        }
+    
+        a {
+            display: block;
+            margin-bottom: 10px;
+        }
     }
 
-    .banner {
-        height: 300px;
+    @media (max-width: 480px) {
+        .container {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .container {
+            width: 95%;
+        }
     }
 
-    .footer2 {
-        flex-direction: column;
-        padding-top: 20px;
-        height: auto;
+    @media (max-width: 480px) {
+        .text-container {
+            word-wrap: break-word;
+            font-size: 14px;
+            padding: 5px;
+        }
     }
-
-    .centered, .centered2 {
-        top: 40%;
-        font-size: 14px;
-    }
-}
-
-/* For laptops and large screens */
-@media (max-width: 1200px) {
-    .container {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .position2 {
-        left: 70%;
-    }
-}
-
-/* For tablets and medium screens */
-@media (max-width: 768px) {
-    .navbar2, .menu2, .footer2 {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .centered, .centered2 {
-        left: 50%;
-        top: 30%;
-        transform: translate(-50%, -30%);
-    }
-
-    .container {
-        width: 100%;
-        flex-direction: column;
-    }
-}
-
-/* For Android phones, small screens */
-@media (max-width: 480px) {
-    .navbar1 {
-        height: 50px;
-        padding-top: 15px;
-    }
-
-    .banner {
-        height: 300px;
-    }
-
-    .footer2 {
-        flex-direction: column;
-        padding-top: 20px;
-        height: auto;
-    }
-
-    .centered, .centered2 {
-        top: 40%;
-        font-size: 14px;
-    }
-}
